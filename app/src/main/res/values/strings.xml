@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LocationSearch</string>
+    <string name="search_hint">Location Name</string>
+    <string name="display_in_map">Display All on Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dialog_title">Erase Location</string>
+    <string name="dialog_message">Erase the stored location?</string>
+    <string name="ok">Erase</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="investiment_title">Fundo de Investimento</string>
+</resources>
