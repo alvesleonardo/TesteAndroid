@@ -20,7 +20,7 @@ data class Screen(
 	val risk: Int? = null,
 
 	@Json(name="downInfo")
-	val downInfo: List<DownInfoItem?>? = null,
+	val downInfo: List<InfoItem?>? = null,
 
 	@Json(name="title")
 	val title: String? = null,

@@ -11,7 +11,7 @@ data class CellsItem(
 	val hidden: Boolean? = null,
 
 	@Json(name="show")
-	val show: String? = null,
+	val show: Int? = null,
 
 	@Json(name="id")
 	val id: Int? = null,

@@ -7,6 +7,6 @@ import io.reactivex.Single
 
 interface SantanderHerokuDomain {
 
-    fun getFormCells(): Flowable<CellsItem?>?
+    fun getFormCells(): Flowable<CellsItem?>
     fun getFounds(): Single<FundResponse>
 }

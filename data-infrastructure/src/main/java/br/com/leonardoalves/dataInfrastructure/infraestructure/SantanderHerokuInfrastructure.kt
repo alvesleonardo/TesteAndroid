@@ -8,7 +8,7 @@ import io.reactivex.Single
 import io.reactivex.schedulers.Schedulers
 
 class SantanderHerokuInfrastructure(private var floatinMountainWebservice: FloatinMountainWebservice):SantanderHerokuDomain{
-    override fun getFormCells(): Flowable<CellsItem?>? {
+    override fun getFormCells(): Flowable<CellsItem?> {
         return floatinMountainWebservice.getFormCells()
                 .filter { it.cells != null }
                 .map { it.cells }

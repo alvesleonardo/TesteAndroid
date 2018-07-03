@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "br.com.leonardoalves.locationsearch"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -41,7 +41,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
     implementation 'com.google.android.gms:play-services-maps:15.0.1'
     implementation 'androidx.appcompat:appcompat:1.0.0-alpha3'
-    implementation 'androidx.vectordrawable:vectordrawable:1.0.0-alpha1'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0-alpha3'
+    implementation 'androidx.annotation:annotation:1.0.0-alpha3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
@@ -70,10 +71,6 @@ dependencies {
     //Stetho
     implementation 'com.facebook.stetho:stetho:1.4.2'
     implementation 'com.facebook.stetho:stetho-okhttp3:1.4.2'
-
-    //UI Helper
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
 
     //Persistence
     implementation 'androidx.room:room-runtime:2.0.0-alpha1'

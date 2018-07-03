@@ -12,4 +12,13 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="investiment_title">Fundo de Investimento</string>
+    <string name="what_is">O que é?</string>
+    <string name="risk_measurement">Grau de risco do investimento</string>
+    <string name="more_info">Mais informações sobre o investimento</string>
+    <string name="found">Fundo</string>
+    <string name="cdi">CDI</string>
+    <string name="period_month">No mês</string>
+    <string name="period_year">No ano</string>
+    <string name="period_12_months">12 meses</string>
+    <string name="download">Baixar</string>
 </resources>

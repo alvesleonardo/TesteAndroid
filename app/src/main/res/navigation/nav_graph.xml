@@ -6,6 +6,11 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="br.com.leonardoalves.multimercado.features.ui.fragments.InvestmentFragment"
-        android:label="InvestmentFragment" />
+        android:label="Investimentos" />
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="br.com.leonardoalves.multimercado.features.ui.fragments.FormFragment"
+        android:label="Contato" />
 
 </navigation>

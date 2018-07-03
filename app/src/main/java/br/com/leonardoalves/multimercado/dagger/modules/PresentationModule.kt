@@ -1,5 +1,9 @@
 package br.com.leonardoalves.multimercado.dagger.modules
 
+import br.com.leonardoalves.domain.domain.Form
+import br.com.leonardoalves.domain.domain.Investment
+import br.com.leonardoalves.multimercado.features.presenters.contactFragment.FormPresenter
+import br.com.leonardoalves.multimercado.features.presenters.contactFragment.FormView
 import br.com.leonardoalves.multimercado.features.presenters.investmentFragment.InvestmentPresenter
 import br.com.leonardoalves.multimercado.features.presenters.investmentFragment.InvestmentView
 import br.com.leonardoalves.multimercado.features.presenters.mainActivity.MainActivityInterface
@@ -14,7 +18,11 @@ class PresentationModule {
         return MainActivityPresenter(viewInterface)
     }
 
-    @Provides fun investmentPresenter(viewInterface:InvestmentView): InvestmentPresenter {
-        return InvestmentPresenter(viewInterface)
+    @Provides fun investmentPresenter(viewInterface:InvestmentView, investmentUseCase: Investment): InvestmentPresenter {
+        return InvestmentPresenter(viewInterface, investmentUseCase)
+    }
+
+    @Provides fun formPresenter(viewInterface:FormView, formUseCase: Form): FormPresenter {
+        return FormPresenter(viewInterface, formUseCase)
     }
 }
