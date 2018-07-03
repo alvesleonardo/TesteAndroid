@@ -2,7 +2,7 @@ package br.com.leonardoalves.multimercado.features.viewModels.entities
 
 enum class FillTypeField private constructor(name: String) {
     text("1"),
-    telNumber("2"),
+    telnumber("2"),
     email("3");
 
     fun equalsName(otherName: String): Boolean {
@@ -15,11 +15,21 @@ enum class FillTypeField private constructor(name: String) {
 
     companion object {
 
+        fun fromOrdinal(int:String):FillTypeField?{
+            var toIntOrNull = int.toIntOrNull()
+            return when(toIntOrNull){
+                1-> text
+                2-> telnumber
+                3-> email
+                else -> null
+            }
+        }
+
         fun fromString(name: String): FillTypeField? {
-            try {
-                return findByName(name)
+            return try {
+                findByName(name)
             } catch (e: Exception) {
-                return null
+                null
             }
 
         }

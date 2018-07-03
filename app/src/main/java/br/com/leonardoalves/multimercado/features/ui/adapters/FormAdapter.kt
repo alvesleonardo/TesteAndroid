@@ -55,4 +55,8 @@ class FormAdapter( var listenerCheckbox: CheckboxViewHolder.CheckboxVisibility,
         }
     }
 
+    interface SendDataAndResults{
+        fun sendDataAndResults()
+    }
+
 }
