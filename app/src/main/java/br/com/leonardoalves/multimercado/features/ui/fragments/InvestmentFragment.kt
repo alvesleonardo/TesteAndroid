@@ -15,6 +15,7 @@ import br.com.leonardoalves.multimercado.features.presenters.investmentFragment.
 import br.com.leonardoalves.multimercado.features.presenters.investmentFragment.InvestmentView
 import br.com.leonardoalves.multimercado.features.ui.adapters.IncomeAdapter
 import br.com.leonardoalves.multimercado.features.ui.adapters.InfoAdapter
+import br.com.leonardoalves.multimercado.features.ui.widgets.LinearBars
 import br.com.leonardoalves.multimercado.features.viewModels.mappers.InvestmentMapper
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -27,6 +28,7 @@ class InvestmentFragment: BaseFragment(), InvestmentView {
     lateinit var whatIs:TextView
     lateinit var incomeTable:RecyclerView
     lateinit var infoTable:RecyclerView
+    lateinit var linearBar: LinearBars
 
     @Inject
     lateinit var presenter: InvestmentPresenter
@@ -52,6 +54,7 @@ class InvestmentFragment: BaseFragment(), InvestmentView {
             layoutManager = infoTableLayout
             adapter = infoAdapter
         }
+        linearBar = view.findViewById(R.id.linearBar)
         return view
     }
 
@@ -75,6 +78,7 @@ class InvestmentFragment: BaseFragment(), InvestmentView {
                     val moreInfoToViewModel = InvestmentMapper.moreInfoToViewModel(it?.moreInfo)
                     incomeTableAdapter.addAll(moreInfoToViewModel)
                     infoAdapter.addItems(it?.info?: arrayListOf<InfoItem>(), it?.downInfo ?: arrayListOf<InfoItem>())
+                    linearBar.setRating(it?.risk?:1)
                 },{
                     it.printStackTrace()
                 }

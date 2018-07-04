@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:fontFamily="@font/din_pro_regular"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 </LinearLayout>

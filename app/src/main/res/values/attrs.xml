@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LinearBars">
+        <attr name="showText" format="boolean" />
+        <attr name="showArrow" format="boolean" />
+        <attr name="ratingMax" format="integer" />
+        <attr name="rating" format="integer" />
+    </declare-styleable>
+</resources>

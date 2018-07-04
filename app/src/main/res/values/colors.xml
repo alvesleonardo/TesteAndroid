@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#CB0000</color>
     <color name="colorAccent">#ED7573</color>
     <color name="white">#ffffff</color>
+    <color name="bar1">#70DC59</color>
+    <color name="bar2">#44C368</color>
+    <color name="bar3">#FFC100</color>
+    <color name="bar4">#FF7318</color>
+    <color name="bar5">#FF332A</color>
+    <color name="black">#000000</color>
 </resources>

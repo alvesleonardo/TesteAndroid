@@ -75,7 +75,7 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="0dp"
-            android:layout_height="70dp"
+            android:layout_height="26dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
@@ -84,7 +84,13 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"></LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <br.com.leonardoalves.multimercado.features.ui.widgets.LinearBars
+                android:id="@+id/linearBar"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/what_is"
@@ -182,7 +188,9 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="32dp"
-            android:text="Button"
+            android:text="@string/invest_action"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
